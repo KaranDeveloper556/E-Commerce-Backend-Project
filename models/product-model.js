@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 let ProductSchema = mongoose.Schema({
-    images: String,
+    images: Buffer,
     productName: String,
     price: Number,
     Discount: {
@@ -9,7 +9,7 @@ let ProductSchema = mongoose.Schema({
         default: 0
     },
     bgColor: String,
-    panalColor: String,
+    panelColor: String,
     textColor: String
 })
 
